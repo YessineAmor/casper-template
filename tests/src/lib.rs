@@ -12,7 +12,7 @@ mod tests {
     const CONTRACT: &str = "tutorial";
 
         let mut context = TestContextBuilder::new()
-            .with_public_key(ali,ali.to_account_hash(), U512::from(128_000_000))
+            .with_public_key(ali,ali.to_account_hash(), U512::from(500_000_000_000_000_000u64))
             .build();
         let session_code = Code::from("contract.wasm");
         let session_args = runtime_args! {
